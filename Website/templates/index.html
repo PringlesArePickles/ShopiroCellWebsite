@@ -1,9 +1,25 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <div class="row">
-        <div class="col">
-            <h1>Cell Website</h1>
-        </div>
+<div class="row">
+    <div class="col">
+        <h1>Cell Website</h1>
+        <img src="{{ url_for('static', filename='jpegimage.png') }}" alt="Cell Diagram" class="main-image">
+        
+        <!-- Circles for interaction -->
+        <div class="circle" style="top: 80px; left: 100px;" data-popup="popup1"></div>
+        <div class="circle" style="top: 80px; left: 200px;" data-popup="popup2"></div>
+        <div class="circle" style="top: 300px; left: 300px;" data-popup="popup3"></div>
+        
+        <!-- Popup images -->
+        <img src="{{ url_for('static', filename='1.png') }}" alt="Popup 1" id="popup1" class="popup-image">
+        <img src="{{ url_for('static', filename='2.png') }}" alt="Popup 2" id="popup2" class="popup-image">
+        <img src="{{ url_for('static', filename='3.png') }}" alt="Popup 3" id="popup3" class="popup-image">
+
+        <script src="{{ url_for('static', filename='zoomIn.js') }}"></script>
+
+        
     </div>
+</div>
+
 {% endblock %}
