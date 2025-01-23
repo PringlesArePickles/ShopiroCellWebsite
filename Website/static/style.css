@@ -10,29 +10,90 @@ body {
 }
 
 
-  .circle {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 0, 0, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid white;
-    transition: transform 0.2s ease;
-  }
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
+}
 
-  .circle:hover {
-    transform: scale(1.2);
-  }
+.circle:hover {
+  transform: scale(1.2);
+}
 
-  .popup-image {
-    display: none;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 10;
-    border: 2px solid #ccc;
-    background: #fff;
-    padding: 5px;
-    max-width: 200px;
-  }
+.popup-image {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  border: 2px solid #ccc;
+  background: #fff;
+  padding: 5px;
+  max-width: 200px;
+}
+
+.storyboard-nav-container[_ngcontent-iih-c7] {
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 4.16666667vw;
+  max-height: 55%;
+  margin: 2.08333333vw 0 0;
+  transform: translate3d(0, -50%, 0);
+}
+
+.storyboard-nav[_ngcontent-iih-c7] {
+  list-style-type: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.storyboard-nav__item--active[_ngcontent-iih-c7] {
+  margin: 3px 0;
+}
+
+.storyboard-nav__item[_ngcontent-iih-c7] {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 7px 0;
+  transition: margin .3s;
+}
+
+.storyboard-nav__dot[_ngcontent-iih-c7] {
+  position: relative;
+  width: 16px;
+}
+
+.storyboard-nav__dot-inner[_ngcontent-iih-c7] {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #d2aadb;
+  transition: width .3s, height .3s, border-color .3s, border-radius .3s;
+}
+
+.storyboard-nav__dot[_ngcontent-iih-c7]:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1px;
+  height: 8px;
+  background-color: #d2aadb;
+  transform: translate3d(-50%, 0, 0);
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
