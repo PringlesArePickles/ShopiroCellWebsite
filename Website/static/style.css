@@ -73,8 +73,8 @@ body {
 }
 
 .storyboard-nav__dot-inner[_ngcontent-iih-c7] {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 20px;
   margin: 0 auto;
   border-radius: 50%;
   border: 1px solid #d2aadb;
@@ -96,4 +96,9 @@ body {
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
+}
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", serif;
+  font-weight: 400;
+  font-style: normal;
 }
