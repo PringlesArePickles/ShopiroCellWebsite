@@ -1,12 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .main-image {
-    width: 400px; /* or any size suitable for your layout */
-    height: auto;
+.main-image {
+  width: 400px; /* or any size suitable for your layout */
+  height: auto;
+  border: 2px solid black;
 }
 
 
@@ -55,11 +56,11 @@ body {
   margin: 0;
 }
 
-.storyboard-nav__item--active[_ngcontent-iih-c7] {
+.storyboard-nav_item--active[_ngcontent-iih-c7] {
   margin: 3px 0;
 }
 
-.storyboard-nav__item[_ngcontent-iih-c7] {
+.storyboard-nav_item[_ngcontent-iih-c7] {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -67,21 +68,26 @@ body {
   transition: margin .3s;
 }
 
-.storyboard-nav__dot[_ngcontent-iih-c7] {
+.storyboard-nav_dot[_ngcontent-iih-c7] {
   position: relative;
   width: 16px;
 }
 
-.storyboard-nav__dot-inner[_ngcontent-iih-c7] {
-  width: 15px;
-  height: 20px;
+.storyboard-nav_dot_final[_ngcontent-iih-c7] {
+  position: relative;
+  width: 16px;
+}
+
+.storyboard-nav_dot-inner[_ngcontent-iih-c7] {
+  width: 10px;
+  height: 10px;
   margin: 0 auto;
   border-radius: 50%;
   border: 1px solid #d2aadb;
   transition: width .3s, height .3s, border-color .3s, border-radius .3s;
 }
 
-.storyboard-nav__dot[_ngcontent-iih-c7]:after {
+.storyboard-nav_dot[_ngcontent-iih-c7]:after {
   content: '';
   display: block;
   position: absolute;
@@ -93,10 +99,13 @@ body {
   transform: translate3d(-50%, 0, 0);
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.selected {
+  border-color: blue !important;
+  width: 13px !important;
+  height: 13px !important;
+  text-shadow: none !important;
 }
+
 .faculty-glyphic-regular {
   font-family: "Faculty Glyphic", serif;
   font-weight: 400;
