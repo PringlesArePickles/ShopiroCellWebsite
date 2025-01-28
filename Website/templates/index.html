@@ -5,7 +5,7 @@
     <h1>Cell Website</h1>
 </div>
 <div class="row">
-    <div class="col-1">
+    <div class="col-2">
         <div _ngcontent-iih-c7="" class="storyboard-nav-container"><!---->
             <ul _ngcontent-iih-c7="" class="storyboard-nav ng-star-inserted" style="top: 0px;"><!----><!---->
                 <li _ngcontent-iih-c7="" class="ng-star-inserted storyboard-nav_item storyboard-nav_item--active">
@@ -90,9 +90,26 @@
         <div class="circle" style="top: 300px; left: 300px;" data-popup="popup3"></div>
         
         <!-- Popup images -->
-        <img src="{{ url_for('static', filename='1.png') }}" alt="Popup 1" id="popup1" class="popup-image">
-        <img src="{{ url_for('static', filename='2.png') }}" alt="Popup 2" id="popup2" class="popup-image">
-        <img src="{{ url_for('static', filename='3.png') }}" alt="Popup 3" id="popup3" class="popup-image">
+         <label id="popup1" class="popup-label">
+            <img src="{{ url_for('static', filename='1.png') }}" alt="Popup 1" class="popup-image">
+            <p>Organelle 1</p>
+            <p>This organelle is cool</p>
+            <p>This organelle does stuff</p>
+         </label>
+        <label id="popup2" class="popup-label">
+            <img src="{{ url_for('static', filename='2.png') }}" alt="Popup 2" class="popup-image">
+            <p>2</p>
+            <p>This organelle is cool</p>
+            <p>This organelle does stuff</p>
+        </label>
+        <label  id="popup3" class="popup-label">
+            <img src="{{ url_for('static', filename='3.png') }}" alt="Popup 3" class="popup-image">
+            <p>3</p>
+            <p>This organelle is cool</p>
+            <p>This organelle does stuff</p>
+        </label>
+        
+        
     </div>
     
 </div>

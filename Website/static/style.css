@@ -1,13 +1,28 @@
+.backgroundClass {
+  background-color: rgb(24, 21, 39) !important;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+p {
+  color: white;
+}
+.bg-body-tertiary {
+  background-color: #4e66f4 !important;
+}
+
+h1 {
+  color: white;
+}
+
 .main-image {
   width: 400px; /* or any size suitable for your layout */
   height: auto;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 
@@ -15,7 +30,7 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(24, 21, 39, .5);
   border-radius: 50%;
   cursor: pointer;
   border: 2px solid white;
@@ -27,7 +42,7 @@ body {
 }
 
 .popup-image {
-  display: none;
+  display: block;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -35,17 +50,23 @@ body {
   border: 2px solid #ccc;
   background: #fff;
   padding: 5px;
-  max-width: 200px;
+  max-width: 100px;
 }
 
+.popup-label{
+  max-width: 200px;
+  max-height: 1000px;
+}
+li {
+  text-align: -webkit-match-parent;
+}
 .storyboard-nav-container[_ngcontent-iih-c7] {
   z-index: 2;
-  overflow: hidden;
   position: absolute;
   top: 50%;
-  left: 4.16666667vw;
+  left: 4vw;
   max-height: 55%;
-  margin: 2.08333333vw 0 0;
+  margin: 2vw 0 0;
   transform: translate3d(0, -50%, 0);
 }
 
@@ -70,20 +91,21 @@ body {
 
 .storyboard-nav_dot[_ngcontent-iih-c7] {
   position: relative;
-  width: 16px;
+  width: 20px;
+  align-items: center;
 }
 
 .storyboard-nav_dot_final[_ngcontent-iih-c7] {
   position: relative;
-  width: 16px;
+  width: 20px;
 }
 
 .storyboard-nav_dot-inner[_ngcontent-iih-c7] {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 0 auto;
   border-radius: 50%;
-  border: 1px solid #d2aadb;
+  border: 1px solid #4e66f4;
   transition: width .3s, height .3s, border-color .3s, border-radius .3s;
 }
 
@@ -95,14 +117,14 @@ body {
   left: 50%;
   width: 1px;
   height: 8px;
-  background-color: #d2aadb;
+  background-color: #4e66f4;
   transform: translate3d(-50%, 0, 0);
 }
 
 .selected {
-  border-color: blue !important;
-  width: 13px !important;
-  height: 13px !important;
+  border-color: white !important;
+  width: 17px !important;
+  height: 17px !important;
   text-shadow: none !important;
 }
 
