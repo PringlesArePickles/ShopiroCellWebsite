@@ -2,15 +2,15 @@
 
 {% block body %}
 <div class="row">
-    <h1>Cell Website</h1>
+    <h1 class="faculty-glyphic-regular">Cell Website</h1>
 </div>
-<div class="row">
-    <div class="col-2">
+<div class="row position-relative">
+    <div class="col-2 position-relative">
         <div _ngcontent-iih-c7="" class="storyboard-nav-container"><!---->
             <ul _ngcontent-iih-c7="" class="storyboard-nav ng-star-inserted" style="top: 0px;"><!----><!---->
                 <li _ngcontent-iih-c7="" class="ng-star-inserted storyboard-nav_item storyboard-nav_item--active">
                     <div _ngcontent-iih-c7="" class="storyboard-nav_dot">
-                        <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup1">
+                        <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner firstDot" id="pagePopup1">
     
                         </div>
                     </div>
@@ -81,7 +81,7 @@
             </ul>
         </div>
     </div>
-    <div class="col position-relative">
+    <div class="col position-relative" id="page1">
         <img src="{{ url_for('static', filename='jpegimage.png') }}" alt="Cell Diagram" class="img-fluid main-image">
         
         <!-- Circles for interaction -->
@@ -92,24 +92,55 @@
         <!-- Popup images -->
          <label id="popup1" class="popup-label">
             <img src="{{ url_for('static', filename='1.png') }}" alt="Popup 1" class="popup-image">
-            <p>Organelle 1</p>
-            <p>This organelle is cool</p>
-            <p>This organelle does stuff</p>
+            <div class="row position-relative">
+                <p class="faculty-glyphic-regular">Organelle 1</p>
+                <p class="faculty-glyphic-regular">This organelle is cool</p>
+                <p class="faculty-glyphic-regular">This organelle does stuff</p>
+            </div>
          </label>
         <label id="popup2" class="popup-label">
             <img src="{{ url_for('static', filename='2.png') }}" alt="Popup 2" class="popup-image">
-            <p>2</p>
-            <p>This organelle is cool</p>
-            <p>This organelle does stuff</p>
+            <div class="row position-relative">
+                <p class="faculty-glyphic-regular">Organelle 2</p>
+                <p class="faculty-glyphic-regular"> This organelle is cool</p>
+                <p class="faculty-glyphic-regular">This organelle does stuff</p>
+            </div>
         </label>
         <label  id="popup3" class="popup-label">
             <img src="{{ url_for('static', filename='3.png') }}" alt="Popup 3" class="popup-image">
-            <p>3</p>
-            <p>This organelle is cool</p>
-            <p>This organelle does stuff</p>
+            <div class="row position-relative">
+                <p class="faculty-glyphic-regular">Organelle 3</p>
+                <p class="faculty-glyphic-regular"> This organelle is cool</p>
+                <p class="faculty-glyphic-regular">This organelle does stuff</p>
+            </div>
         </label>
-        
-        
+    </div>
+    <div class="col position-relative" id="page2">
+        <h1>page 2</h1>
+    </div>
+    <div class="col position-relative" id="page3">
+        <h1>page 3</h1>
+    </div>
+    <div class="col position-relative" id="page4">
+        <h1>page 4</h1>
+    </div>
+    <div class="col position-relative" id="page5">
+        <h1>page 5</h1>
+    </div>
+    <div class="col position-relative" id="page6">
+        <h1>page 6</h1>
+    </div>
+    <div class="col position-relative" id="page7">
+        <h1>page 7</h1>
+    </div>
+    <div class="col position-relative" id="page8">
+        <h1>page 8</h1>
+    </div>
+    <div class="col position-relative" id="page9">
+        <h1>page 9</h1>
+    </div>
+    <div class="col position-relative" id="page10">
+        <h1>page 10</h1>
     </div>
     
 </div>

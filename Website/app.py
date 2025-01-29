@@ -15,4 +15,4 @@ def quiz():
         return render_template("quiz.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

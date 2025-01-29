@@ -15,3 +15,8 @@ For Kushal:
 For other people:
 - Images for each organelle
 - Possibly put some info for each organelle in a google doc inside the Cell Website google drive
+
+Colors:
+- rgb(255, 255, 255) #FFFFFF
+- rgb(24, 21, 39), #181527
+- rgb(78, 102, 244), #4e66f4
