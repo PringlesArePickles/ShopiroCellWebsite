@@ -24,14 +24,14 @@ h1 {
   color: #181527;
 }
 
-.main-image {
+.mainImage {
   width: 400px; /* or any size suitable for your layout */
   height: auto;
   border: 2px solid #4e66f4;
 }
 
 
-.circle {
+.animalCircle {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -42,11 +42,26 @@ h1 {
   transition: transform 0.2s ease;
 }
 
-.circle:hover {
+.animalCircle:hover {
   transform: scale(1.2);
 }
 
-.popup-image {
+.plantCircle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(24, 21, 39, .5);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
+}
+
+.plantCircle:hover {
+  transform: scale(1.2);
+}
+
+.popupImage {
   display: block;
   position: absolute;
   top: 10px;
@@ -58,7 +73,13 @@ h1 {
   max-width: 100px;
 }
 
-.popup-label{
+.animalPopupLabel{
+  max-width: 200px;
+  max-height: 1000px;
+}
+
+.plantPopupLabel{
+  position: absolute;
   max-width: 200px;
   max-height: 1000px;
 }
