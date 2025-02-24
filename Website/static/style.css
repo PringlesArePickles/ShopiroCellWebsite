@@ -161,3 +161,20 @@ li {
   font-weight: 400;
   font-style: normal;
 }
+
+table {
+  border-radius: 5px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #bababa;
+}
