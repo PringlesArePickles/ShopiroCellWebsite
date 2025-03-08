@@ -87,7 +87,7 @@
         <p>Cells evolved from bacteria eating one another</p>
         <p>A bacteria eats another bacteria, and if they benefit eachother, the ingested bacteria gets to stay.</p>
         <p>Eventually the bacteria (cell) engulfed enough bacteria to look like the cells we see today.</p>
-        <p>This theory is called Endosymbiosis</p>
+        <p>This theory is called Endosymbiosis, created by Lynn Margulis in 2001</p>
         <p>Endosymbiotic theory led to the creation of organelles.</p>
         <p>Organelles to a cell are like organs to humans.</p>
     </div>
@@ -110,23 +110,62 @@
         </div>
     </div>
     <div class="col position-relative" id="page2">
-        <h1>Put some of the scientists and stuff here</h1>
+        <div class = "row-3">
+            <h1>History of Cell Discovery</h1>
+            <p>
+
+            <h5> Robert Hooke (1665): </h5>
+                
+            <p>First to observe and name "cells" after looking at cork under a microscope.
+                Saw empty "cell" walls in plant material.</p>
+            <h5>Antonie van Leeuwenhoek (1674):</h5>
+                
+                    <p> Discovered "animalcules" (single-celled organisms) by observing pond water under a microscope.
+                First to observe living cells.
+                First to observe living cells.</p>
+                <h5>Matthias Schleiden (1838):</h5>
+                
+                Proposed that all plants are made of cells.
+                <h5>Theodor Schwann (1839):</h5>
+                
+                Proposed that all animals are made of cells.
+                Rudolf Virchow (1855):
+                
+                Concluded that all cells come from pre-existing cells.
+            
+                <h5>Cell Theory:</h5>
+                    <p>1. All living things are made of cells (Schleiden & Schwann).<p></p>
+                    <p>2. The cell is the basic unit of structure and function in living organisms.</p>
+                    <p>3. All cells arise from preexisting cells (Virchow).</p>
+                    <p>4. All cells contain genetically inherited material(DNA/RNA)</p>
+
+            </p>
+                </div>
+                <div class="row-2">
+                    <div class="col">
+                        <img src="{{url_for('static', filename='sigma.jpeg')}}">
+                    </div>
+                    <div class="col">
+                        <p>Leeuwenhoek's first microscope</p>
+                    </div>
+                </div>
+
     </div>
     <div class="col position-relative" id="page3">
         <h1>page 3</h1>
         <h1>Animal Cell</h1>
-        <img src="{{ url_for('static', filename='jpegimage.png') }}" alt="Cell Diagram" class="img-fluid mainImage">
+        <img src="{{ url_for('static', filename='omega.png') }}" alt="Cell Diagram" class="img-fluid mainImage">
         
         <!-- Circles for interaction -->
-        <div class="animalCircle" style="top: 180px; left: 100px;" animalDataPopup="popup1"></div>
-        <div class="animalCircle" style="top: 180px; left: 200px;" animalDataPopup="popup2"></div>
-        <div class="animalCircle" style="top: 300px; left: 300px;" animalDataPopup="popup3"></div>
+        <div class="animalCircle" style="top: 215px; left: 200px; z-index: 0;" animalDataPopup="popup1"></div>
+        <div class="animalCircle" style="top: 295px; left: 190px; z-index: 0;" animalDataPopup="popup2"></div>
+        <div class="animalCircle" style="top: 150px; left: 170px; z-index: 0;" animalDataPopup="popup3"></div>
         
         <!-- Popup images -->
          <label id="popup1" class="animalPopupLabel">
             <div class="row">
                 <div class="col position-relative">
-                    <img src="{{ url_for('static', filename='1.png') }}" alt="Popup 1" class="popupImage">
+                    <img src="{{ url_for('static', filename='1.png') }}" alt="Popup 1" style="z-index: 1;" class="popupImage">
                 </div>
                 <div class="col position-relative">
                     <p class="faculty-glyphic-regular">Organelle 1</p>
