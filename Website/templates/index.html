@@ -137,9 +137,17 @@
         <img src="{{ url_for('static', filename='omega.png') }}" alt="Cell Diagram" class="img-fluid mainImage">
         
         <!-- Circles for interaction -->
-        <div class="animalCircle" style="top: 215px; left: 200px; z-index: 0;" animalDataPopup="animalPopupCellMembrane"></div>
-        <div class="animalCircle" style="top: 295px; left: 190px; z-index: 0;" animalDataPopup="popup2"></div>
-        <div class="animalCircle" style="top: 150px; left: 170px; z-index: 0;" animalDataPopup="popup3"></div>
+        <div class="animalCircle" style="top: 160px; left: 200px; z-index: 0;" animalDataPopup="animalPopupCellMembrane"></div>
+        <div class="animalCircle" style="top: 400px; left: 300px; z-index: 0;" animalDataPopup="animalPopupNucleus"></div>
+        <div class="animalCircle" style="top: 610px; left: 400px; z-index: 0;" animalDataPopup="animalPopupRibosomes"></div>
+        <div class="animalCircle" style="top: 430px; left: 300px; z-index: 0;" animalDataPopup="animalPopupNucleolus"></div>
+        <div class="animalCircle" style="top: 500px; left: 270px; z-index: 0;" animalDataPopup="animalPopupNuclearMembrane"></div>
+        <div class="animalCircle" style="top: 620px; left: 330px; z-index: 0;" animalDataPopup="animalPopupER"></div>
+        <div class="animalCircle" style="top: 430px; left: 430px; z-index: 0;" animalDataPopup="animalPopupSmoothER"></div>
+        <div class="animalCircle" style="top: 590px; left: 400px; z-index: 0;" animalDataPopup="animalPopupRoughER"></div>
+        <div class="animalCircle" style="top: 590px; left: 200px; z-index: 0;" animalDataPopup="animalPopupGolgiBody"></div>
+
+
         
         <div class="container my-4">
             {% with prefix_id = "animalPopup", class="animalPopupLabel"%}
