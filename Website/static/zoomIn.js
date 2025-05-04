@@ -1,43 +1,49 @@
 document.addEventListener('DOMContentLoaded', () => {
   const animalCircles = document.querySelectorAll('.animalCircle');
   const animalPopups = document.querySelectorAll('.animalPopupLabel');
-  animalPopups.forEach(p => p.style.display = 'none'); // Hide all popups
+  animalPopups.forEach(p => p.style.display = 'none');
 
   const plantCircles = document.querySelectorAll('.plantCircle');
   const plantPopups = document.querySelectorAll('.plantPopupLabel');
-  plantPopups.forEach(p => p.style.display = 'none') // Hide all popups
-  
+  plantPopups.forEach(p => p.style.display = 'none');
+
+  // Animal Circles
   animalCircles.forEach(circle => {
     circle.addEventListener('mouseover', () => {
       const popupId = circle.getAttribute('animalDataPopup');
       const popup = document.getElementById(popupId);
-      animalPopups.forEach(p => p.style.display = 'none'); // Hide all popups
-      popup.style.display = 'block';
+      animalPopups.forEach(p => p.style.display = 'none');
+      if (popup) {
+        popup.style.display = 'block';
+      }
     });
-  
+
     circle.addEventListener('mouseout', () => {
       const popupId = circle.getAttribute('animalDataPopup');
       const popup = document.getElementById(popupId);
-      popup.style.display = 'none';
+      if (popup) {
+        popup.style.display = 'none';
+      }
     });
   });
 
+  // Plant Circles
   plantCircles.forEach(circle => {
     circle.addEventListener('mouseover', () => {
-      console.log("mouse over");
       const popupId = circle.getAttribute('plantDataPopup');
       const popup = document.getElementById(popupId);
-      plantPopups.forEach(p => p.style.display = 'none'); // Hide all popups
-      popup.style.display = 'block';
-      console.log("mouse over after");
+      plantPopups.forEach(p => p.style.display = 'none');
+      if (popup) {
+        popup.style.display = 'block';
+      }
     });
-  
+
     circle.addEventListener('mouseout', () => {
-      console.log("mouse out");
       const popupId = circle.getAttribute('plantDataPopup');
       const popup = document.getElementById(popupId);
-      popup.style.display = 'none';
-      console.log("mouse out after");
+      if (popup) {
+        popup.style.display = 'none';
+      }
     });
   });
 });

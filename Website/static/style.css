@@ -74,16 +74,23 @@ h1 {
   max-width: 100px;
 }
 
-.animalPopupLabel{
-  max-width: 200px;
-  max-height: 1000px;
+.animalPopupLabel,
+.plantPopupLabel {
+  position: fixed;
+  top: 200px;     /* moved down from 100px */
+  right: 220px;    /* moved left from 40px */
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 999;
 }
 
-.plantPopupLabel{
-  position: absolute;
-  max-width: 200px;
-  max-height: 1000px;
-}
+
+
 
 li {
   text-align: -webkit-match-parent;
