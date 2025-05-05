@@ -132,7 +132,7 @@
 
     </div>
     <div class="col position-relative" id="page3">
-        <h1>page 3</h1>
+        <h1>Page 3</h1>
         <h1>Animal Cell</h1>
         <img src="{{ url_for('static', filename='omega.png') }}" alt="Cell Diagram" class="img-fluid mainImage">
         
@@ -146,6 +146,13 @@
         <div class="animalCircle" style="top: 430px; left: 430px; z-index: 0;" animalDataPopup="animalPopupSmoothER"></div>
         <div class="animalCircle" style="top: 590px; left: 400px; z-index: 0;" animalDataPopup="animalPopupRoughER"></div>
         <div class="animalCircle" style="top: 590px; left: 200px; z-index: 0;" animalDataPopup="animalPopupGolgiBody"></div>
+        <div class="animalCircle" style="top: 580px; left: 100px; z-index: 0;" animalDataPopup="animalPopupLysosome"></div>
+        <div class="animalCircle" style="top: 430px; left: 100px; z-index: 0;" animalDataPopup="animalPopupVacuole"></div>
+        <div class="animalCircle" style="top: 535px; left: 115px; z-index: 0;" animalDataPopup="animalPopupPeroxisomes"></div>
+        <div class="animalCircle" style="top: 300px; left: 200px; z-index: 0;" animalDataPopup="animalPopupMitochondria"></div>
+        <div class="animalCircle" style="top: 180px; left: 300px; z-index: 0;" animalDataPopup="animalPopupMTOC"></div>
+        <div class="animalCircle" style="top: 180px; left: 280px; z-index: 0;" animalDataPopup="animalPopupCentrioles"></div>
+
 
 
         
@@ -154,47 +161,11 @@
                 {% include 'organelles.html' %}
             {% endwith %}
         </div><!-- End container -->
-
-        <!-- Popup images -->
-         <label id="popup1" class="animalPopupLabel">
-            <div class="row">
-                <div class="col position-relative">
-                    <img src="{{ url_for('static', filename='1.png') }}" alt="Popup 1" style="z-index: 1;" class="popupImage">
-                </div>
-                <div class="col position-relative">
-                    <p class="faculty-glyphic-regular">Organelle 1</p>
-                    <p class="faculty-glyphic-regular">This organelle is cool</p>
-                    <p class="faculty-glyphic-regular">This organelle does stuff</p>
-                </div>
-            </div>
-         </label>
-        <label id="popup2" class="animalPopupLabel">
-            <div class="row">
-                <div class="col position-relative">
-                    <img src="{{ url_for('static', filename='2.png') }}" alt="Popup 2" class="popupImage">
-                </div>
-                <div class="col position-relative">
-                    <p class="faculty-glyphic-regular">Organelle 2</p>
-                    <p class="faculty-glyphic-regular"> This organelle is cool</p>
-                    <p class="faculty-glyphic-regular">This organelle does stuff</p>
-                </div>
-            </div>
-        </label>
-        <label  id="popup3" class="animalPopupLabel">
-            <div class="row">
-                <div class="col position-relative">
-                    <img src="{{ url_for('static', filename='3.png') }}" alt="Popup 3" class="popupImage">
-                </div>
-                <div class="col position-relative">
-                    <p class="faculty-glyphic-regular">Organelle 3</p>
-                    <p class="faculty-glyphic-regular"> This organelle is cool</p>
-                    <p class="faculty-glyphic-regular">This organelle does stuff</p>
-                </div>
-            </div>
-        </label>
     </div>
+
     <div class="col position-relative" id="page4">
         <h1>page 4</h1>
+        <h1>Plant Cell</h1>
         <img src="{{ url_for('static', filename='download (1).jpeg') }}" alt="Cell Diagram" class="img-fluid mainImage">
         
         <!-- Circles for interaction -->
@@ -207,46 +178,8 @@
                 {% include 'organelles.html' %}
             {% endwith %}
         </div><!-- End container -->
-
-        <!-- Popup images -->
-         <label id="plantPopup1" class="plantPopupLabel">
-            <div class="row">
-                <div class="col position-relative">
-                    <img src="{{ url_for('static', filename='1.png') }}" alt="Popup 1" class="popupImage">
-                </div>
-                <div class="col position-relative">
-                    <p class="faculty-glyphic-regular">Organelle 1</p>
-                    <p class="faculty-glyphic-regular">This organelle is cool</p>
-                    <p class="faculty-glyphic-regular">This organelle does stuff</p>
-                </div>
-            </div>
-         </label>
-        <label id="plantPopup2" class="plantPopupLabel">
-            <div class="row">
-                <div class="col position-relative">
-                    <img src="{{ url_for('static', filename='2.png') }}" alt="Popup 2" class="popupImage">
-                </div>
-                <div class="col position-relative">
-                    <p class="faculty-glyphic-regular">Organelle 2</p>
-                    <p class="faculty-glyphic-regular"> This organelle is cool</p>
-                    <p class="faculty-glyphic-regular">This organelle does stuff</p>
-                </div>
-            </div>
-
-        </label>
-        <label  id="plantPopup3" class="plantPopupLabel">
-            <div class="row">
-                <div class="col position-relative">
-                    <img src="{{ url_for('static', filename='3.png') }}" alt="Popup 3" class="popupImage">
-                </div>
-                <div class="col position-relative">
-                    <p class="faculty-glyphic-regular">Organelle 3</p>
-                    <p class="faculty-glyphic-regular"> This organelle is cool</p>
-                    <p class="faculty-glyphic-regular">This organelle does stuff</p>
-                </div>
-            </div>
-        </label>
     </div>
+
     <div class="col position-relative" id="page5">
         <h1>A Plant cell</h1>
         <div class="container my-4">
