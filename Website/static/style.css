@@ -96,66 +96,79 @@ li {
   text-align: -webkit-match-parent;
 }
 
+/* Container for the entire navigation bar (dots) */
 .storyboard-nav-container[_ngcontent-iih-c7] {
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 4vw;
-  max-height: 55%;
-  margin: 2vw 0 0;
-  transform: translate3d(0, -50%, 0);
+  z-index: 2;                         /* Keeps it above other elements */
+  position: absolute;                /* Allows custom positioning */
+  top: 50%;                          /* Centers vertically */
+  left: 4vw;                         /* Pushes it a bit from the left edge */
+  max-height: 80%;                  /* Limits height */
+  margin: 2vw 0 0;                  /* Top margin */
+  transform: translate3d(0, -80%, 0); /* Perfect vertical centering */
 }
 
+/* Unordered list (ul) for dot items */
 .storyboard-nav[_ngcontent-iih-c7] {
-  list-style-type: none;
-  position: relative;
+  list-style-type: none;            /* Removes bullet points */
+  position: relative;               /* Allows positioning of child elements */
   padding: 0;
   margin: 0;
 }
 
+/* Style for the active nav item (e.g., selected dot's container) */
 .storyboard-nav_item--active[_ngcontent-iih-c7] {
-  margin: 3px 0;
+  margin: 3px 0;                    /* Overrides spacing for the active item */
 }
 
+/* Each dot item (li) in the nav */
 .storyboard-nav_item[_ngcontent-iih-c7] {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin: 7px 0;
-  transition: margin .3s;
+  cursor: pointer;                  /* Pointer cursor on hover */
+  display: flex;                    /* Aligns children horizontally */
+  align-items: center;             /* Vertically centers inner content */
+  margin: 30px 0;                  /* Vertical space between dots */
+  transition: margin .3s;          /* Smooth transition for margin changes */
 }
 
+/* Outer wrapper of the dot */
 .storyboard-nav_dot[_ngcontent-iih-c7] {
-  position: relative;
-  width: 20px;
-  align-items: center;
+  position: relative;              /* Needed for ::after line placement */
+  width: 35px;                     /* Dot column width */
+  align-items: center;            /* Intended to align content (but missing display:flex) */
 }
 
+/* Special case: last dot */
 .storyboard-nav_dot_final[_ngcontent-iih-c7] {
   position: relative;
-  width: 20px;
+  width: 35px;
 }
 
+/* Actual dot (circle) itself */
 .storyboard-nav_dot-inner[_ngcontent-iih-c7] {
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 1px solid #181527;
-  transition: width .3s, height .3s, border-color .3s, border-radius .3s;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;                  /* Centers horizontally */
+  border-radius: 50%;             /* Makes it a circle */
+  border: 1px solid #181527;      /* Border color of the dot */
+  transition:                      /* Smooth animation for style changes */
+    width .3s,
+    height .3s,
+    border-color .3s,
+    border-radius .3s;
 }
 
+/* Vertical line connecting dots (except last one) */
 .storyboard-nav_dot[_ngcontent-iih-c7]:after {
-  content: '';
+  content: '';                     /* Adds a decorative element */
   display: block;
   position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 1px;
-  height: 8px;
-  background-color: #4e66f4;
-  transform: translate3d(-50%, 0, 0);
+  top: 100%;                       /* Places it right below the dot */
+  left: 50%;                       /* Centered horizontally */
+  width: 5px;
+  height: 30px;                    /* Length of the connecting line */
+  background-color: #4e66f4;       /* Line color */
+  transform: translate3d(-50%, 0, 0); /* Horizontally centers the line */
 }
+
 
 .selected {
   border-color: #181527 !important;

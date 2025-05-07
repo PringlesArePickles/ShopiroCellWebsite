@@ -6,15 +6,21 @@ Everyone do this!!:
 
 For Ryan:
 - figure out how to make the website not look shit
-- fix the label popups because I broke them
+- Make page 6 and 7 more interesting
 
 For Kushal:
-- Finish the navbar
-- fonts??
+- Fix how to go from page to page (make slider bigger?)
+- Fix Navbar bec its geeked
 
-For other people:
-- Images for each organelle
-- Possibly put some info for each organelle in a google doc inside the Cell Website google drive
+For Leo:
+- Commit Animal buttons
+- Do plant buttons
+
+For Lidor and Will:
+- Make website look professional (Bold importaint names, make good fonts, fix Navbar, ect)
+- Make summery look better
+- Get better plant image (NOT shuttershock)
+
 
 Colors:
 - rgb(255, 255, 255) #FFFFFF
