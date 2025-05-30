@@ -4,7 +4,7 @@
 }
 
 .backgroundClass {
-  background-color: rgb(255, 255, 255) !important;
+  background-color: rgb(243, 240, 204) !important;
 }
 
 body {
@@ -183,7 +183,7 @@ li {
   left: 50%;                       /* Centered horizontally */
   width: 5px;
   height: 30px;                    /* Length of the connecting line */
-  background-color: #fcfcfc;       /* Line color */
+  background-color: rgb(243, 240, 204);       /* Line color */
   transform: translate3d(-50%, 0, 0); /* Horizontally centers the line */
 }
 
@@ -219,7 +219,7 @@ th {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #1fa2c6;
   color: white;
   padding: 6px 12px;
   border: none;
@@ -232,11 +232,12 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #3381fd;
   transform: translateY(-2px);
 }
 
 button:active {
-  background-color: #3e8e41;
+  background-color: #1b5a0a;
   transform: translateY(0);
 }
+
