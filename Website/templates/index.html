@@ -2,59 +2,92 @@
 
 {% block body %}
 <div class="row">
-    <h1 class="faculty-glyphic-regular">Cell Website</h1>
+    <h1 class="faculty-glyphic-regular">The CellVerse</h1>
 </div>
 <div class="row position-relative">
     <div class="col-2 position-relative">
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
         <div _ngcontent-iih-c7="" class="storyboard-nav-container"><!---->
             <ul _ngcontent-iih-c7="" class="storyboard-nav ng-star-inserted" style="top: 0px;"><!----><!---->
                 <li _ngcontent-iih-c7="" class="ng-star-inserted storyboard-nav_item storyboard-nav_item--active">
                     <div _ngcontent-iih-c7="" class="storyboard-nav_dot">
                         <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner firstDot" id="pagePopup1">
-    
+                            <!--<p class="muted">History <a href="#" data-bs-toggle="tooltip"
+                                    data-bs-title="Default tooltip">inline links</a>  <a href="#"
+                                    data-bs-toggle="tooltip" data-bs-title="Another tooltip"></a>. Alpha <a href="#" data-bs-toggle="tooltip"
+                                    data-bs-title="Another one here too"></a> <a href="#" data-bs-toggle="tooltip"
+                                    data-bs-title="The last tip!">your own</a> site or project.</p>-->
+                            <button type="button" class="custom-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                                Cells
+                            </button>
                         </div>
                     </div>
+                
                 </li><!---->
                 <li _ngcontent-iih-c7="" class="ng-star-inserted storyboard-nav_item">
-                    <div _ngcontent-iih-c7="" class="storyboard-nav_dot" >
+                    <div _ngcontent-iih-c7="" class="storyboard-nav_dot">
                         <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup2">
-    
-                        </div>
-                    </div>
-                </li><!---->
-                <li _ngcontent-iih-c7="" class="storyboard-nav_item ng-star-inserted">
-                    <div _ngcontent-iih-c7="" class="storyboard-nav_dot" >
-                        <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup3">
-    
+                            <button type="button" class="custom-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                                History
+                            </button>
                         </div>
                     </div>
                 </li><!---->
                 <li _ngcontent-iih-c7="" class="storyboard-nav_item ng-star-inserted">
                     <div _ngcontent-iih-c7="" class="storyboard-nav_dot">
                         <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup4">
-    
+                            <button type="button" class="custom-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                                Animal
+                            </button>
                         </div>
                     </div>
                 </li><!---->
                 <li _ngcontent-iih-c7="" class="storyboard-nav_item ng-star-inserted">
                     <div _ngcontent-iih-c7="" class="storyboard-nav_dot">
                         <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup5">
-    
+                            <button type="button" class="custom-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                                Plant
+                            </button>
                         </div>
                     </div>
                 </li><!---->
-                            </li><!---->
+                <li _ngcontent-iih-c7="" class="storyboard-nav_item ng-star-inserted">
+                    <div _ngcontent-iih-c7="" class="storyboard-nav_dot">
+                        <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup6">
+                            <button type="button" class="custom-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                                Organelles
+                            </button>
+                        </div>
+                    </div>
+                </li><!---->
+                <li _ngcontent-iih-c7="" class="storyboard-nav_item ng-star-inserted">
+                    <div _ngcontent-iih-c7="" class="storyboard-nav_dot">
+                        <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup3">
+                            <button type="button" class="custom-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                                Prokaryotes
+                            </button>
+                        </div>
+                    </div>
+                </li><!---->
+                </li><!---->
                 <li _ngcontent-iih-c7="" class="storyboard-nav_item ng-star-inserted">
                     <div _ngcontent-iih-c7="" class="storyboard-nav_dot">
                         <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup9">
-    
+                            <button type="button" class="custom-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                                Comparisons
+                            </button>
                         </div>
                     </div>
                 </li><!---->
                 <li _ngcontent-iih-c7="" class="storyboard-nav_item ng-star-inserted">
                     <div _ngcontent-iih-c7="" class="storyboard-nav_dot_final">
                         <div _ngcontent-iih-c7="" class="storyboard-nav_dot-inner" id="pagePopup10">
-    
+                            <button type="button" class="custom-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                                Summary
+                            </button>
                         </div>
                     </div>
                 </li>
@@ -90,124 +123,199 @@
         </div>
     </div>
     <div class="col position-relative" id="page2">
-        <div class = "row-3">
+        <div class="row-3">
             <h1>History of Cell Discovery</h1>
-            
+
             <h4><strong> Robert Hooke (1665): </strong></h4>
-                
+
             <p>First to observe and name "cells" after looking at cork under a microscope.
                 Saw empty "cell" walls in plant material.</p>
 
             <hr>
             <h4><strong>Antonie van Leeuwenhoek (1674):</strong></h4>
-                
-                    <p> Discovered "animalcules" (single-celled organisms) by observing pond water under a microscope.
+
+            <p> Discovered "animalcules" (single-celled organisms) by observing pond water under a microscope.
                 First to observe living cells.
                 First to observe living cells.</p>
             <hr>
-                <h4><strong>Matthias Schleiden (1838):</strong></h4>
-                
-                Proposed that all plants are made of cells.
+            <h4><strong>Matthias Schleiden (1838):</strong></h4>
+
+            Proposed that all plants are made of cells.
             <hr>
-                <h4><strong>Theodor Schwann (1839):</strong></h4>
-                
-                Proposed that all animals are made of cells.
-                Rudolf Virchow (1855):
-                
-                Concluded that all cells come from pre-existing cells.
+            <h4><strong>Theodor Schwann (1839):</strong></h4>
+
+            Proposed that all animals are made of cells.
+            Rudolf Virchow (1855):
+
+            Concluded that all cells come from pre-existing cells.
             <hr>
-                <h4><strong>Cell Theory:</strong></h4>
-                    <p>1. All living things are made of cells (Schleiden & Schwann).<p></p>
-                    <p>2. The cell is the basic unit of structure and function in living organisms.</p>
-                    <p>3. All cells arise from preexisting cells (Virchow).</p>
-                    <p>4. All cells contain genetically inherited material(DNA/RNA)</p>
+            <h4><strong>Cell Theory:</strong></h4>
+            <p>1. All living things are made of cells (Schleiden & Schwann).
+            <p></p>
+            <p>2. The cell is the basic unit of structure and function in living organisms.</p>
+            <p>3. All cells arise from preexisting cells (Virchow).</p>
+            <p>4. All cells contain genetically inherited material(DNA/RNA)</p>
 
             </p>
-                </div>
-                <div class="row-2">
-                    <div class="col">
-                        <img src="{{url_for('static', filename='sigma.jpeg')}}">
-                    </div>
-                    <div class="col">
-                        <p>Leeuwenhoek's first microscope</p>
-                    </div>
-                </div>
+        </div>
+        <div class="row-2">
+            <div class="col">
+                <img src="{{url_for('static', filename='sigma.jpeg')}}">
+            </div>
+            <div class="col">
+                <p>Leeuwenhoek's first microscope</p>
+            </div>
+        </div>
 
     </div>
-    <div class="col position-relative" id="page3">
-        <h1>Page 3</h1>
+    <div class="col position-relative" id="page4">
         <h1>Animal Cell</h1>
         <img src="{{ url_for('static', filename='omega.png') }}" alt="Cell Diagram" class="img-fluid mainImage">
-        
+
         <!-- Circles for interaction -->
-        <div class="animalCircle" style="top: 160px; left: 200px; z-index: 0;" animalDataPopup="animalPopupCellMembrane"></div>
-        <div class="animalCircle" style="top: 400px; left: 300px; z-index: 0;" animalDataPopup="animalPopupNucleus"></div>
-        <div class="animalCircle" style="top: 610px; left: 400px; z-index: 0;" animalDataPopup="animalPopupRibosomes"></div>
-        <div class="animalCircle" style="top: 430px; left: 300px; z-index: 0;" animalDataPopup="animalPopupNucleolus"></div>
-        <div class="animalCircle" style="top: 500px; left: 270px; z-index: 0;" animalDataPopup="animalPopupNuclearMembrane"></div>
+        <div class="animalCircle" style="top: 160px; left: 200px; z-index: 0;"
+            animalDataPopup="animalPopupCellMembrane"></div>
+        <div class="animalCircle" style="top: 400px; left: 300px; z-index: 0;" animalDataPopup="animalPopupNucleus">
+        </div>
+        <div class="animalCircle" style="top: 610px; left: 400px; z-index: 0;" animalDataPopup="animalPopupRibosomes">
+        </div>
+        <div class="animalCircle" style="top: 430px; left: 300px; z-index: 0;" animalDataPopup="animalPopupNucleolus">
+        </div>
+        <div class="animalCircle" style="top: 500px; left: 270px; z-index: 0;"
+            animalDataPopup="animalPopupNuclearMembrane"></div>
         <div class="animalCircle" style="top: 620px; left: 330px; z-index: 0;" animalDataPopup="animalPopupER"></div>
-        <div class="animalCircle" style="top: 430px; left: 430px; z-index: 0;" animalDataPopup="animalPopupSmoothER"></div>
-        <div class="animalCircle" style="top: 590px; left: 400px; z-index: 0;" animalDataPopup="animalPopupRoughER"></div>
-        <div class="animalCircle" style="top: 590px; left: 200px; z-index: 0;" animalDataPopup="animalPopupGolgiBody"></div>
-        <div class="animalCircle" style="top: 580px; left: 100px; z-index: 0;" animalDataPopup="animalPopupLysosome"></div>
-        <div class="animalCircle" style="top: 430px; left: 100px; z-index: 0;" animalDataPopup="animalPopupVacuole"></div>
-        <div class="animalCircle" style="top: 535px; left: 115px; z-index: 0;" animalDataPopup="animalPopupPeroxisomes"></div>
-        <div class="animalCircle" style="top: 300px; left: 200px; z-index: 0;" animalDataPopup="animalPopupMitochondria"></div>
+        <div class="animalCircle" style="top: 430px; left: 430px; z-index: 0;" animalDataPopup="animalPopupSmoothER">
+        </div>
+        <div class="animalCircle" style="top: 590px; left: 400px; z-index: 0;" animalDataPopup="animalPopupRoughER">
+        </div>
+        <div class="animalCircle" style="top: 590px; left: 200px; z-index: 0;" animalDataPopup="animalPopupGolgiBody">
+        </div>
+        <div class="animalCircle" style="top: 580px; left: 100px; z-index: 0;" animalDataPopup="animalPopupLysosome">
+        </div>
+        <div class="animalCircle" style="top: 430px; left: 100px; z-index: 0;" animalDataPopup="animalPopupVacuole">
+        </div>
+        <div class="animalCircle" style="top: 535px; left: 115px; z-index: 0;" animalDataPopup="animalPopupPeroxisomes">
+        </div>
+        <div class="animalCircle" style="top: 300px; left: 200px; z-index: 0;"
+            animalDataPopup="animalPopupMitochondria"></div>
         <div class="animalCircle" style="top: 180px; left: 300px; z-index: 0;" animalDataPopup="animalPopupMTOC"></div>
-        <div class="animalCircle" style="top: 180px; left: 280px; z-index: 0;" animalDataPopup="animalPopupCentrioles"></div>
-        <div class="animalCircle" style="top: 680px; left: 380px; z-index: 0;" animalDataPopup="animalPopupCytosol"></div>
+        <div class="animalCircle" style="top: 180px; left: 280px; z-index: 0;" animalDataPopup="animalPopupCentrioles">
+        </div>
+        <div class="animalCircle" style="top: 680px; left: 380px; z-index: 0;" animalDataPopup="animalPopupCytosol">
+        </div>
 
 
 
 
-        
+
         <div class="container my-4">
             {% with prefix_id = "animalPopup", class="animalPopupLabel"%}
-                {% include 'organelles.html' %}
-            {% endwith %}
-        </div><!-- End container -->
-    </div>
-
-    <div class="col position-relative" id="page4">
-        <h1>Page 4</h1>
-        <h1>Plant Cell</h1>
-        <img src="{{ url_for('static', filename='plantimage.webp') }}" alt="Cell Diagram" class="img-fluid mainImage">
-        
-        <!-- Circles for interaction -->
-        <div class="plantCircle" style="top: 210px; left: 210px; z-index: 0;" plantDataPopup="plantPopupCellMembrane"></div>
-        <div class="plantCircle" style="top: 400px; left: 200px; z-index: 0;" plantDataPopup="plantPopupNucleus"></div>
-        <div class="plantCircle" style="top: 530px; left: 420px; z-index: 0;" plantDataPopup="plantPopupRibosomes"></div>
-        <div class="plantCircle" style="top: 370px; left: 220px; z-index: 0;" plantDataPopup="plantPopupNucleolus"></div>
-        <div class="plantCircle" style="top: 360px; left: 145px; z-index: 0;" plantDataPopup="plantPopupNuclearMembrane"></div>
-        <div class="plantCircle" style="top: 460px; left: 200px; z-index: 0;" plantDataPopup="plantPopupER"></div>
-        <div class="plantCircle" style="top: 590px; left: 440px; z-index: 0;" plantDataPopup="plantPopupGolgiBody"></div>
-        <div class="plantCircle" style="top: 430px; left: 400px; z-index: 0;" plantDataPopup="plantPopupVacuole"></div>
-        <div class="plantCircle" style="top: 625px; left: 150px; z-index: 0;" plantDataPopup="plantPopupPeroxisomes"></div>
-        <div class="plantCircle" style="top: 250px; left: 380px; z-index: 0;" plantDataPopup="plantPopupMitochondria"></div>
-        <div class="plantCircle" style="top: 190px; left: 200px; z-index: 0;" plantDataPopup="plantPopupCellWall"></div>
-        <div class="plantCircle" style="top: 620px; left: 270px; z-index: 0;" plantDataPopup="plantPopupCytosol"></div>
-        <div class="plantCircle" style="top: 245px; left: 300px; z-index: 0;" plantDataPopup="plantPopupChloroplast"></div>
-
-
-        
-        <div class="container my-4">
-            {% with prefix_id = "plantPopup", class="plantPopupLabel"%}
-                {% include 'organelles.html' %}
+            {% include 'organelles.html' %}
             {% endwith %}
         </div><!-- End container -->
     </div>
 
     <div class="col position-relative" id="page5">
+        <h1>Plant Cell</h1>
+        <img src="{{ url_for('static', filename='plantimage.webp') }}" alt="Cell Diagram" class="img-fluid mainImage">
+
+        <!-- Circles for interaction -->
+        <div class="plantCircle" style="top: 210px; left: 210px; z-index: 0;" plantDataPopup="plantPopupCellMembrane">
+        </div>
+        <div class="plantCircle" style="top: 400px; left: 200px; z-index: 0;" plantDataPopup="plantPopupNucleus"></div>
+        <div class="plantCircle" style="top: 530px; left: 420px; z-index: 0;" plantDataPopup="plantPopupRibosomes">
+        </div>
+        <div class="plantCircle" style="top: 370px; left: 220px; z-index: 0;" plantDataPopup="plantPopupNucleolus">
+        </div>
+        <div class="plantCircle" style="top: 360px; left: 145px; z-index: 0;"
+            plantDataPopup="plantPopupNuclearMembrane"></div>
+        <div class="plantCircle" style="top: 460px; left: 200px; z-index: 0;" plantDataPopup="plantPopupER"></div>
+        <div class="plantCircle" style="top: 590px; left: 440px; z-index: 0;" plantDataPopup="plantPopupGolgiBody">
+        </div>
+        <div class="plantCircle" style="top: 430px; left: 400px; z-index: 0;" plantDataPopup="plantPopupVacuole"></div>
+        <div class="plantCircle" style="top: 625px; left: 150px; z-index: 0;" plantDataPopup="plantPopupPeroxisomes">
+        </div>
+        <div class="plantCircle" style="top: 250px; left: 380px; z-index: 0;" plantDataPopup="plantPopupMitochondria">
+        </div>
+        <div class="plantCircle" style="top: 190px; left: 200px; z-index: 0;" plantDataPopup="plantPopupCellWall"></div>
+        <div class="plantCircle" style="top: 620px; left: 270px; z-index: 0;" plantDataPopup="plantPopupCytosol"></div>
+        <div class="plantCircle" style="top: 245px; left: 300px; z-index: 0;" plantDataPopup="plantPopupChloroplast">
+        </div>
+
+
+
+        <div class="container my-4">
+            {% with prefix_id = "plantPopup", class="plantPopupLabel"%}
+            {% include 'organelles.html' %}
+            {% endwith %}
+        </div><!-- End container -->
+    </div>
+
+    <div class="col position-relative" id="page6">
         <div class="container my-4">
             <h1 class="text-left mb-5">Cell Structure and Organelles</h1>
             {% with prefix_id = "defineAll", class="organelle"%}
-                {% include 'organelles.html' %}
-            {% endwith %}            
+            {% include 'organelles.html' %}
+            {% endwith %}
         </div><!-- End container -->
     </div>
+
+    <div clas="col position-relative" id="page3">
+        <div class="container my-4">
+            <h1>&emsp; &emsp;&emsp; &emsp; Prokaryotic cells</h1>
+            <p style="text-indent: 180px;">
+                <img src="{{ url_for('static', filename='pro.jpg') }}" alt="Cell Diagram" class="img-fluid mainImage">
+            </p>
+
+            <!-- Circles for interaction -->
+            <div class="proCircle" style="top: 210px; left: 210px; z-index: 0;" proDataPopup="proPopupCellMembrane">
+            </div>
+            <div class="proCircle" style="top: 400px; left: 200px; z-index: 0;" proDataPopup="proPopupNucleus"></div>
+            <div class="proCircle" style="top: 460px; left: 385px; z-index: 0;" proDataPopup="proPopupCytosol"></div>
+            <div class="proCircle" style="top: 390px; left: 220px; z-index: 0;" proDataPopup="proPopupNucleolus"></div>
+            <div class="proCircle" style="top: 360px; left: 145px; z-index: 0;" proDataPopup="proPopupNuclearMembrane">
+            </div>
+            <div class="proCircle" style="top: 460px; left: 200px; z-index: 0;" proDataPopup="proPopupER"></div>
+            <div class="proCircle" style="top: 590px; left: 440px; z-index: 0;" proDataPopup="proPopupGolgiBody"></div>
+            <div class="proCircle" style="top: 105px; left: 480px; z-index: 0;" proDataPopup="proPopupCelia"></div>
+            <div class="proCircle" style="top: 625px; left: 150px; z-index: 0;" proDataPopup="proPopupPeroxisomes">
+            </div>
+            <div class="proCircle" style="top: 250px; left: 380px; z-index: 0;" proDataPopup="proPopupMitochondria">
+            </div>
+            <div class="proCircle" style="top: 190px; left: 200px; z-index: 0;" proDataPopup="proPopupCellWall"></div>
+            <div class="proCircle" style="top: 620px; left: 270px; z-index: 0;" proDataPopup="proPopupCytosol"></div>
+            <div class="proCircle" style="top: 245px; left: 300px; z-index: 0;" proDataPopup="proPopupChloroplast">
+            </div>
+
+
+
+            <div class="container my-4">
+                {% with prefix_id = "proPopup", class="proPopupLabel"%}
+                {% include 'organelles.html' %}
+                {% endwith %}
+            </div><!-- End container -->
+
+        </div><!-- End container-->
+    </div>
+
     <div class="col position-relative" id="page9">
         <h1>Plant vs. Animal Cells</h1>
-        <p>Because of Endosymbiotic Theory, cells have evolved into different categories, most commonly plant and animal, each with different characteristics and functions.</p>
+        <p>Because of Endosymbiotic Theory, cells have evolved into different categories, most commonly plant and
+            animal, each with different characteristics and functions.</p>
+        <h2> Endosymbiotic theory</h2>
+        <p> A long time ago, before complex cells (like the ones in plants and animals) existed, there were only simple
+            cells—prokaryotes like bacteria.</p>
+        <p>One day, a large prokaryotic cell swallowed a smaller one, maybe a bacterium that was really good at using
+            oxygen to make energy. But instead of digesting it, the two cells started working together. The smaller cell
+            helped make energy, and the bigger cell gave it protection. Over time, that small cell became part of the
+            big cell.</p>
+        <p>That’s how we think mitochondria formed — the “powerhouses” of our cells.
+
+            Later, a similar thing happened with a cell that could do photosynthesis — that one eventually became the
+            chloroplast in plant cells.</p>
+
+
+        <h2>Must Know comparisons</h2>
         <table>
             <tr>
                 <th>Plant</th>
@@ -230,62 +338,97 @@
                 <td>Contains centrioles inside the MTOC</td>
             </tr>
         </table>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>Eukaryotic</th>
+                <th>Prokaryotic</th>
+            </tr>
+            <tr>
+                <td>Have a nucleus</td>
+                <td>Don't have a nucleus</td>
+            </tr>
+            <tr>
+                <td>Larger</td>
+                <td>Smaller</td>
+            </tr>
+            <tr>
+                <td>Have organelles</td>
+                <td>Don't have organelles</td>
+            </tr>
+            <tr>
+                <td>DNA in nucleus</td>
+                <td>DNA is located floating inside the cytoplasm</td>
+            </tr>
+            <tr>
+                <td>Examples: Animals, Plants, Fungi, Protist</td>
+                <td>Examples: Bacteria, Archaea</td>
+            </tr>
+        </table>
     </div>
     <div class="col position-relative" id="page10">
         <h1>A Summary</h1>
         <p>Here’s a concise summary on <strong>cells</strong>:</p>
-        
+
         <hr>
-        
+
         <h4><strong>What Are Cells?</strong></h4>
-        <p>Cells are the <strong>basic units of life</strong> in all living organisms. Every organism, from bacteria to humans, is made up of cells.</p>
-        
+        <p>Cells are the <strong>basic units of life</strong> in all living organisms. Every organism, from bacteria to
+            humans, is made up of cells.</p>
+
         <hr>
-        
+
         <h3><strong>Main Cell Parts</strong></h3>
-        
+
         <h4>Prokaryotic Cells</h4>
         <ul>
-          <li>Found in bacteria and archaea</li>
-          <li>No nucleus or membrane-bound organelles</li>
-          <li>Smaller and simpler</li>
+            <li>Found in bacteria and archaea</li>
+            <li>No nucleus or membrane-bound organelles</li>
+            <li>Smaller and simpler</li>
         </ul>
-        
+
         <h4>Eukaryotic Cells</h4>
         <ul>
-          <li>Found in plants, animals, fungi, and protists</li>
-          <li>Have a nucleus and membrane-bound organelles</li>
-          <li>Larger and more complex</li>
+            <li>Found in plants, animals, fungi, and protists</li>
+            <li>Have a nucleus and membrane-bound organelles</li>
+            <li>Larger and more complex</li>
         </ul>
-        
+
         <hr>
-        
+
         <h4><strong>Main Cell Parts</strong></h4>
         <ul>
-          <li><strong>Cell Membrane</strong>: Controls what enters and leaves the cell</li>
-          <li><strong>Cytoplasm</strong>: Jelly-like fluid where organelles float</li>
-          <li><strong>Nucleus</strong>: Contains DNA; controls cell activities</li>
-          <li>Mitochondria: Produces energy (ATP) through respiration</li>
-          <li>Ribosomes: Make proteins</li>
-          <li>Endoplasmic Reticulum (ER): Helps in making proteins (rough ER) and lipids (smooth ER)</li>
-          <li>Golgi Apparatus: Packages and ships proteins</li>
-          <li>Lysosomes: Break down waste (mostly in animal cells)</li>
-          <li>Chloroplasts: Do photosynthesis (only in plant cells)</li>
-          <li>Cell Wall: Provides structure (only in plant cells)</li>
+            <li><strong>Cell Membrane</strong>: Controls what enters and leaves the cell</li>
+            <li><strong>Cytoplasm</strong>: Jelly-like fluid where organelles float</li>
+            <li><strong>Nucleus</strong>: Contains DNA; controls cell activities</li>
+            <li>Mitochondria: Produces energy (ATP) through respiration</li>
+            <li>Ribosomes: Make proteins</li>
+            <li>Endoplasmic Reticulum (ER): Helps in making proteins (rough ER) and lipids (smooth ER)</li>
+            <li>Golgi Apparatus: Packages and ships proteins</li>
+            <li>Lysosomes: Break down waste (mostly in animal cells)</li>
+            <li>Chloroplasts: Do photosynthesis (only in plant cells)</li>
+            <li>Cell Wall: Provides structure (only in plant cells)</li>
         </ul>
-        
+
         <h4><strong>Key Cell Functions</strong></h4>
         <ul>
-          <li><strong>Reproduction</strong>: Mitosis (body cells) or meiosis (sex cells)</li>
-          <li><strong>Energy Use</strong>: Cellular respiration in mitochondria</li>
-          <li><strong>Protein Synthesis</strong>: DNA → RNA → Protein</li>
-          <li><strong>Transport</strong>: Movement of materials across the membrane</li>
-          <li><strong>Homeostasis</strong>: Maintaining a stable internal environment</li>
+            <li><strong>Reproduction</strong>: Mitosis (body cells) or meiosis (sex cells)</li>
+            <li><strong>Energy Use</strong>: Cellular respiration in mitochondria</li>
+            <li><strong>Protein Synthesis</strong>: DNA → RNA → Protein</li>
+            <li><strong>Transport</strong>: Movement of materials across the membrane</li>
+            <li><strong>Homeostasis</strong>: Maintaining a stable internal environment</li>
         </ul>
-        
-        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Made by Kushal P, Leo P, Lidor D, Ryan S, and Will G.</p>
+
+
     </div>
-    
+
 </div>
 
 {% endblock %}

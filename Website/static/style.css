@@ -58,7 +58,23 @@ h1 {
   transition: transform 0.2s ease;
 }
 
+.proCircle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(24, 21, 39, .5);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
+}
+
+
 .plantCircle:hover {
+  transform: scale(1.2);
+}
+
+.proCircle:hover {
   transform: scale(1.2);
 }
 
@@ -75,7 +91,7 @@ h1 {
 }
 
 .animalPopupLabel,
-.plantPopupLabel {
+.plantPopupLabel, .proPopupLabel {
   position: fixed;
   top: 200px;     /* moved down from 100px */
   right: 220px;    /* moved left from 40px */
@@ -88,6 +104,8 @@ h1 {
   display: none;
   z-index: 999;
 }
+
+
 
 
 
@@ -144,11 +162,11 @@ li {
 
 /* Actual dot (circle) itself */
 .storyboard-nav_dot-inner[_ngcontent-iih-c7] {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   margin: 0 auto;                  /* Centers horizontally */
   border-radius: 50%;             /* Makes it a circle */
-  border: 1px solid #181527;      /* Border color of the dot */
+  border: 1px solid #4CAF50;      /* Border color of the dot */
   transition:                      /* Smooth animation for style changes */
     width .3s,
     height .3s,
@@ -165,7 +183,7 @@ li {
   left: 50%;                       /* Centered horizontally */
   width: 5px;
   height: 30px;                    /* Length of the connecting line */
-  background-color: #4e66f4;       /* Line color */
+  background-color: #fcfcfc;       /* Line color */
   transform: translate3d(-50%, 0, 0); /* Horizontally centers the line */
 }
 
@@ -198,4 +216,27 @@ th {
   border: 1px solid #ddd;
   padding: 8px;
   background-color: #bababa;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 10000;
+  position: fixed;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
 }

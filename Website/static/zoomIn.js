@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const plantPopups = document.querySelectorAll('.plantPopupLabel');
   plantPopups.forEach(p => p.style.display = 'none');
 
+  const proCircles = document.querySelectorAll('.proCircle');
+  const proPopups = document.querySelectorAll('.proPopupLabel');
+  proPopups.forEach(p => p.style.display ='none');
+
+
   // Animal Circles
   animalCircles.forEach(circle => {
     circle.addEventListener('mouseover', () => {
@@ -26,6 +31,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+   
+  //pro circles
+  proCircles.forEach(circle => {
+    circle.addEventListener('mouseover', () => {
+      const popupId = circle.getAttribute('proDataPopup');
+      const popup = document.getElementById(popupId);
+      animalPopups.forEach(p => p.style.display = 'none');
+      if (popup) {
+        popup.style.display = 'block';
+      }
+    });
+
+    circle.addEventListener('mouseout', () => {
+      const popupId = circle.getAttribute('proDataPopup');
+      const popup = document.getElementById(popupId);
+      if (popup) {
+        popup.style.display = 'none';
+      }
+    });
+  });
+  // circle labels
 
   // Plant Circles
   plantCircles.forEach(circle => {
@@ -47,3 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+

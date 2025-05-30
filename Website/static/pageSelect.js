@@ -32,3 +32,5 @@ function checkPages(dotId) {
         });
     }
 }
+
+
